@@ -1,11 +1,12 @@
 .about-container {
   display: flex;
   width: 100%;
-  height: calc(100vh - 73px);
+  height: calc(100vh - 80px);
   justify-content: center;
   align-items: center;
   overflow: hidden;
   background-color: rgba(255, 255, 255);
+  scroll-snap-align: end;
 }
 
 .about-content {

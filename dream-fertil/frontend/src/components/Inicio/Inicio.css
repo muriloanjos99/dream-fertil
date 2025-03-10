@@ -4,8 +4,9 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: calc(100vh - 73px);
+  height: calc(100vh - 80px);
   overflow: hidden;
+  scroll-snap-align: end;
 }
 
 .background-video {
