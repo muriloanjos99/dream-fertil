@@ -13,12 +13,19 @@ function App() {
   return (
     <>
       <Header />
-      <Inicio />
-      <Features />
-      <QuemSomos />
-      <Produtos />
-      <Certificacao />
-      <FaleConosco />
+      <main>
+        <img
+          src="src/assets/bg_image.avif"
+          alt="Background"
+          className="background-image"
+        />
+        <Inicio />
+        <Features />
+        <QuemSomos />
+        <Produtos />
+        <Certificacao />
+        <FaleConosco />
+      </main>
       <Footer />
     </>
   )
