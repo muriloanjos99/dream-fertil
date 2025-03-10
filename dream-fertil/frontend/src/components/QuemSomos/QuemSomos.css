@@ -1,0 +1,49 @@
+.about-container {
+  display: flex;
+  width: 100%;
+  height: calc(100vh - 73px);
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background-color: rgba(255, 255, 255);
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+}
+
+.about-title {
+  font-family: "Avenir LT Pro 85 Heavy";
+  line-height: 1.4em;
+  font-size: 36px;
+  color: rgb(37,53,44);
+  margin-bottom: 0;
+  margin-top: 0;
+  text-align: left;
+  width: 50%;
+}
+
+.about-subtitle {
+  font-family: "Avenir LT Pro 85 Heavy";
+  line-height: 1.4em;
+  font-size: 16px;
+  color: rgb(123,158,54);
+  margin-top: 0;
+  width: 50%;
+  text-align: left;
+}
+
+.about-text {
+  font-family: "Avenir LT Pro 35 Light";
+  line-height: 1.4em;
+  font-size: 18px;
+  color: rgb(37,53,44);
+  margin-top: 0;
+  width: 50%;
+  text-align: left;
+}
