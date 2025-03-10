@@ -10,7 +10,7 @@ export const FaleConosco = () => {
           <h3>Endereço</h3>
           <div className="address-item">
             <strong>Escritório comercial</strong>
-            <p>Rua Guarani, 391 - Maringá (PR)</p>
+            <p>Rua Guarani, 391 - Maringá - PR</p>
           </div>
           <div className="address-item">
             <strong>Fábrica</strong>
