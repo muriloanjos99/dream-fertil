@@ -1,0 +1,67 @@
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: calc(100vh - 73px - 5vh);
+  align-items: center;
+  overflow: hidden;
+  background-color: rgba(255, 255, 255);
+}
+
+.contact-title {
+  font-family: "Avenir LT Pro 85 Heavy";
+  font-size: 56px;
+  color: rgb(37, 53, 44);
+  margin: 1vh 0 2vh 0;
+}
+
+.contact-grid {
+  display: flex;
+  flex-direction: row;
+  width: 48%;
+  margin-top: 0;
+  color: rgb(37, 53, 44);
+  justify-content: space-between;
+}
+
+.contact-grid h3 {
+  font-family: "Avenir LT Pro 85 Heavy";
+  font-size: 26px;
+  color: rgb(37, 53, 44);
+}
+
+.address-card {
+  font-family: "Avenir LT Pro 85 Heavy";
+  width: 37%;
+  color: rgb(66, 66, 66);
+
+  p {
+    font-family: "Avenir LT Pro 35 Light";
+    margin: 0 0 4vh 0;
+  }
+}
+
+.contact-info {
+  font-family: "Avenir LT Pro 85 Heavy";
+  width: 33%;  
+  p {
+    font-family: "Avenir LT Pro 35 Light";
+    margin: 0 0 4vh 0;
+  }
+}
+
+.social-links {
+  font-family: "Avenir LT Pro 85 Heavy";
+  text-align: center;
+  width: 25%;  
+  p {
+    font-family: "Avenir LT Pro 35 Light";
+  }
+}
+
+.social-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100%;
+}
