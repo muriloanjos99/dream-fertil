@@ -1,3 +1,5 @@
+import './Produtos.css';
+
 export const Produtos = () => {
   return (
     <section className="products-section" id="fertlizantes">
@@ -5,41 +7,58 @@ export const Produtos = () => {
 
       <div className="products-grid">
         <div className="product-card">
-          <img src="caminho/3.png" alt="Fertilizante Garden" loading="lazy" className="product-image" />
-          <h3 className="product-name">Garden</h3>
-          <p className="product-description">Fertilizante orgânico sem cheiro. Ideal para casas, jardins e ambientes fechados.</p>
-          <a href="https://wa.me/554499612027" className="cta-button" target="_blank" rel="noopener noreferrer">
-            Comprar <i className="bi bi-whatsapp"></i>
-          </a>
+          <img src="src/assets/dreamfertil_garden.avif" alt="Fertilizante Garden" loading="lazy" className="product-image" />
+          <div className="product-info">
+            <p className="product-description">Fertilizante orgânico sem cheiro. Ideal para casas, jardins e ambientes fechados.</p>
+            <div className="product-name-btn">
+              <h3 className="product-name">Garden</h3>
+              <a href="https://wa.me/554499612027" className="cta-button" target="_blank" rel="noopener noreferrer">
+                Comprar
+              </a>
+            </div>
+          </div>
         </div>
 
         <div className="product-card">
-          <img src="caminho/1.png" alt="Fertilizante Organdream 25kg" loading="lazy" className="product-image" />
-          <h3 className="product-name">Organdream 25kg</h3>
-          <p className="product-description">Fertilizante orgânico 100% natural com certificação internacional. Rico em micro e macro nutrientes.</p>
-          <a href="https://wa.me/554499612027" className="cta-button" target="_blank" rel="noopener noreferrer">
-            Comprar <i className="bi bi-whatsapp"></i>
-          </a>
+          <img src="src/assets/dreamfertil_organdream_25.avif" alt="Fertilizante Organdream 25kg" loading="lazy" className="product-image" />
+          <div className="product-info">
+            <p className="product-description">Fertilizante orgânico 100% natural, com certificação internacional. Rico em micro e macro nutrientes para enriquecer o solo da sua lavoura.</p>
+            <div className="product-name-btn">
+              <h3 className="product-name">Organdream 25kg</h3>
+              <a href="https://wa.me/554499612027" className="cta-button" target="_blank" rel="noopener noreferrer">
+                Comprar
+              </a>
+            </div>
+          </div>
         </div>
 
         <div className="product-card">
-          <img src="caminho/2.png" alt="Fertilizante Organdream 800kg" loading="lazy" className="product-image" />
-          <h3 className="product-name">Organdream 800kg</h3>
-          <p className="product-description">Fertilizante orgânico 100% natural com certificação internacional para grandes lavouras.</p>
-          <a href="https://wa.me/554499612027" className="cta-button" target="_blank" rel="noopener noreferrer">
-            Comprar <i className="bi bi-whatsapp"></i>
-          </a>
+          <img src="src/assets/dreamfertil_organdream_800.avif" alt="Fertilizante Organdream 800kg" loading="lazy" className="product-image" />
+          <div className="product-info">
+            <p className="product-description">Fertilizante orgânico 100% natural, com certificação internacional. Rico em nutrientes para o solo da sua lavoura.</p>
+            <div className="product-name-btn">
+              <h3 className="product-name">Organdream 800kg</h3>
+              <a href="https://wa.me/554499612027" className="cta-button" target="_blank" rel="noopener noreferrer">
+                Comprar
+              </a>
+            </div>
+          </div>
         </div>
 
         <div className="product-card">
-          <img src="caminho/4.png" alt="Formulações Especiais" loading="lazy" className="product-image" />
-          <h3 className="product-name">Outras formulações</h3>
-          <p className="product-description">Fertilizante personalizado com componentes minerais e biológicos conforme necessidade do solo.</p>
-          <a href="https://wa.me/554499612027" className="cta-button" target="_blank" rel="noopener noreferrer">
-            Saiba mais <i className="bi bi-arrow-right"></i>
-          </a>
+          <img src="src/assets/dreamfertil_outras-formulacoes.avif" alt="Formulações Especiais" loading="lazy" className="product-image" />
+          <div className="product-info">
+            <p className="product-description">Fertilizante feito sob medida, com adição de componentes minerais e biológicos, conforme a necessidade de cada solo.</p>
+            <div className="product-name-btn">
+
+              <h3 className="product-name">Outras formulações</h3>
+              <a href="https://wa.me/554499612027" className="cta-button" target="_blank" rel="noopener noreferrer">
+                Saiba mais
+              </a>
+            </div>
+          </div>
         </div>
       </div>
-    </section>
+    </section >
   );
 }

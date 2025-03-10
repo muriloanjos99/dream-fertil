@@ -1,0 +1,84 @@
+.products-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: calc(100vh - 73px);
+  align-items: center;
+  overflow: hidden;
+  background-color: rgba(237,237,237);
+}
+
+.section-title {
+  font-family: "Avenir LT Pro 35 Light", sans-serif;
+  font-size: 56px;
+  color: rgb(37,53,44);
+}
+
+.products-grid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 90%;
+  margin: auto;
+  margin-top: 0;
+  row-gap: 35px;
+}
+
+.product-card {
+  display: flex;
+  width: 33%;
+  height: 282px;
+  gap: 1vw;
+}
+
+.product-info {
+  display: flex;
+  max-height: 100%;
+  width: 39%;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 2vh;
+}
+
+.product-description {
+  font-family: "Avenir LT Pro 35 Light", sans-serif;
+  font-size: 15px;
+  color: rgb(66,66,66);
+}
+
+.product-name {
+  font-family: "Avenir LT Pro 85 Heavy";
+  line-height: 1.4em;
+  font-size: 20px;
+  color: rgb(37,53,44);
+  margin: 0;
+  text-align: left;
+  width: 100%;
+}
+
+.product-name-btn {
+  display: flex;
+  flex-direction: column;
+  gap: 1vh;
+  margin-bottom: 2vh;
+}
+
+.cta-button {
+  color: #FFFFFF;
+  background-color: #5E801A;
+  font-family: "Avenir LT Pro 35 Light", sans-serif;
+  font-size: 14px;
+  font-weight: 100;
+  letter-spacing: 0;
+  padding: 10px 20px;
+  transition: all 0.2s ease, visibility 0s;
+  width: 50%;
+  text-align: center;
+}
+
+.cta-button:hover {
+  background-color: #FFFFFF;
+  color: #5E801A;
+  border: 1px solid #5E801A;
+}
