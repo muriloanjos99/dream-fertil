@@ -1,26 +1,32 @@
-import { Button } from "@mui/material";
 import "./Header.css"
-const navItems = ['Início', 'Quem somos', 'Fertilizantes', 'Certificação', 'Contato'];
+
+const navItems = [
+  { id: 'inicio', label: 'Início', link: '' },
+  { id: 'quem-somos', label: 'Quem somos', link: '' },
+  { id: 'fertilizantes', label: 'Fertilizantes', link: '' },
+  { id: 'certificacao', label: 'Certificação', link: '' },
+  { id: 'contato', label: 'Contato', link: '' },
+];
 
 export const Header = () => {
   return (
-    <header>
-      <div className="header-container">
-        <div className="header-img-container">
-          <img className="header-logo-img" src="src/assets/download.png" alt="" height={"50px"} />
-        </div>
-        <div className="header-buttons-container">
-          {navItems.map((item) => (
-            <Button
-              key={item}
-              className="header-button"
-              href={`#${item.toLowerCase().replace(' ', '-')}`}
-            >
-              {item}
-            </Button>
-          ))}
-        </div>
+    <header className="header-container">
+      <div className="header-logo">
+        <a href="" target="_self" className="header-logo-link">
+          <img className="header-logo-img" src="src/assets/dreamfertil_logo.avif" alt="" />
+        </a>
       </div>
-    </header>
+      <nav className="header-nav">
+        <ul className="header-nav-list">
+          {navItems.map((item) => (
+            <li key={item.id} className="header-nav-item">
+              <a href={item.link} target="_self" className="header-nav-link">
+                <p className="header-nav-text">{item.label}</p>
+              </a>
+            </li>
+          ))}
+        </ul>
+      </nav>
+    </header >
   );
 }
