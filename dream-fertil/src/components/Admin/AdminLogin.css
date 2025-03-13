@@ -1,0 +1,77 @@
+.admin-login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: calc(100vh - 5vh);
+  min-width: 30vw;
+  background: linear-gradient(135deg, #2E5E4E, #4CAF50);
+}
+
+.admin-login h1 {
+  font-family: 'Avenir LT Pro 85 Heavy';
+  color: white;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.admin-login form {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+}
+
+.admin-login input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-family: 'Avenir LT Pro 35 Light';
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.admin-login input:focus {
+  border-color: #4CAF50;
+}
+
+.admin-login button {
+  width: 100%;
+  padding: 12px;
+  background: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-family: 'Avenir LT Pro 85 Heavy';
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.admin-login button:hover {
+  background: #45A049;
+}
+
+.error {
+  color: #f44336;
+  font-family: 'Avenir LT Pro 35 Light';
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .admin-login h1 {
+    font-size: 2rem;
+  }
+
+  .admin-login form {
+    padding: 1.5rem;
+  }
+}

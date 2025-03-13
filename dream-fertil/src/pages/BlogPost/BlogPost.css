@@ -1,0 +1,151 @@
+:root {
+  --primary: #2E5E4E;
+  --secondary: #4CAF50;
+  --accent: #8BC34A;
+  --light: rgba(244, 244, 244, 0.95);
+  --dark: #2D2D2D;
+}
+
+.background-overlay {
+  background-color: rgba(255, 255, 255, 0.342);
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: -1;
+}
+
+.news-detail-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 2rem;
+  min-height: calc(100vh - 120px);
+  background: var(--light);
+  margin-top: 5vh;
+  background: var(--light);
+  backdrop-filter: blur(50px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  width: 800px;
+}
+
+.news-detail-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--light);
+  backdrop-filter: blur(8px);
+  z-index: -1;
+  border-radius: 20px;
+}
+
+.news-title {
+  font-family: 'Avenir LT Pro 85 Heavy';
+  color: var(--dark);
+  font-size: 2.5rem;
+  text-align: center;
+  max-width: 800px;
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+
+.news-title::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: var(--secondary);
+  margin: 1.5rem auto 0;
+}
+
+.news-subtitle {
+  font-family: 'Avenir LT Pro 35 Light';
+  color: var(--dark);
+  font-size: 1.1rem;
+  max-width: 800px;
+  text-align: center;
+  margin-bottom: 3rem;
+  opacity: 0.9;
+}
+
+.news-image {
+  width: 100%;
+  max-width: 1000px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 2rem;
+  box-shadow: 0 8px 24px rgba(92, 158, 173, 0.15);
+}
+
+.news-content {
+  max-width: 800px;
+  font-family: 'Avenir LT Pro 35 Light';
+  line-height: 1.8;
+  color: var(--dark);
+  font-size: 1.1rem;
+}
+
+.news-content p {
+  margin-bottom: 1.5rem;
+}
+
+.metadata {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  color: var(--primary);
+  font-family: 'Avenir LT Pro 85 Heavy';
+}
+
+.share-buttons {
+  display: flex;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.back-to-blog-button,
+.share-button {
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-family: 'Avenir LT Pro 85 Heavy';
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.back-to-blog-button {
+  background: var(--primary);
+  color: white;
+}
+
+.back-to-blog-button:hover {
+  background: var(--accent);
+  transform: translateY(-2px);
+}
+
+.share-message {
+  font-family: 'Avenir LT Pro 85 Heavy';
+  margin-bottom: 0;
+  color: var(--dark);
+}
+
+.share-button {
+  background: var(--secondary);
+  color: white;
+}
+
+.share-button:hover {
+  background: #F4A261;
+  transform: translateY(-2px);
+}
+
+svg {
+  width: 24px;
+  height: 24px;
+}

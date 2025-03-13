@@ -1,0 +1,98 @@
+.admin-post-item {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 1.5rem;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.admin-post-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.admin-post-item img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.post-details {
+  flex: 1;
+}
+
+.post-details h3 {
+  font-family: 'Avenir LT Pro 85 Heavy';
+  color: #2E5E4E;
+  margin: 0 0 0.5rem;
+  font-size: 1.25rem;
+}
+
+.post-details p {
+  font-family: 'Avenir LT Pro 35 Light';
+  color: #666;
+  margin: 0 0 0.5rem;
+  font-size: 1rem;
+}
+
+.post-details small {
+  font-family: 'Avenir LT Pro 35 Light';
+  color: #999;
+  font-size: 0.9rem;
+}
+
+.post-actions {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.post-actions button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  font-family: 'Avenir LT Pro 85 Heavy';
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.post-actions button:first-child {
+  background: #2196F3;
+  color: white;
+}
+
+.post-actions button:first-child:hover {
+  background: #1e88e5;
+}
+
+.post-actions button:last-child {
+  background: #f44336;
+  color: white;
+}
+
+.post-actions button:last-child:hover {
+  background: #e53935;
+}
+
+@media (max-width: 768px) {
+  .admin-post-item {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  .admin-post-item img {
+    width: 100%;
+    height: auto;
+    max-height: 200px;
+  }
+
+  .post-actions {
+    justify-content: center;
+  }
+}

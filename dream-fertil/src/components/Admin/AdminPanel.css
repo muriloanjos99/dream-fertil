@@ -1,0 +1,125 @@
+.admin-panel {
+  max-width: 1200px;
+  min-height: calc(100vh - 90px - 5vh);
+  margin: 90px auto 0 auto;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.admin-panel h1 {
+  font-family: 'Avenir LT Pro 85 Heavy';
+  color: #2E5E4E;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.new-post-button {
+  background: #4CAF50;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-family: 'Avenir LT Pro 85 Heavy';
+  font-size: 1rem;
+  cursor: pointer;
+  margin-bottom: 2rem;
+  transition: background-color 0.3s ease;
+}
+
+.new-post-button:hover {
+  background: #45A049;
+}
+
+.posts-list {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.admin-post-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  background: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.admin-post-item img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.post-details {
+  flex: 1;
+}
+
+.post-details h3 {
+  font-family: 'Avenir LT Pro 85 Heavy';
+  color: #2E5E4E;
+  margin: 0 0 0.5rem;
+}
+
+.post-details p {
+  font-family: 'Avenir LT Pro 35 Light';
+  color: #666;
+  margin: 0 0 0.5rem;
+}
+
+.post-details small {
+  font-family: 'Avenir LT Pro 35 Light';
+  color: #999;
+  font-size: 0.9rem;
+}
+
+.post-actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.post-actions button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  font-family: 'Avenir LT Pro 85 Heavy';
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.post-actions button:first-child {
+  background: #2196F3;
+  color: white;
+}
+
+.post-actions button:first-child:hover {
+  background: #1e88e5;
+}
+
+.post-actions button:last-child {
+  background: #f44336;
+  color: white;
+}
+
+.post-actions button:last-child:hover {
+  background: #e53935;
+}
+
+@media (max-width: 768px) {
+  .admin-panel h1 {
+    font-size: 2rem;
+  }
+
+  .admin-post-item {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .post-actions {
+    justify-content: center;
+  }
+}

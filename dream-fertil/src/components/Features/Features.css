@@ -1,0 +1,109 @@
+.features-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: calc(100vh - 90px);
+  background-color: rgba(255, 255, 255, 0.277);
+  scroll-snap-align: end;
+}
+
+.features-title {
+  font-size: 56px;
+  font-weight: 100 !important;
+  margin: 0 0 0 0;
+  font-family: "Avenir LT Pro 35 Light", sans-serif;
+  font-weight: 100;
+
+  strong {
+    font-family: "Avenir LT Pro 85 Heavy";
+  }
+}
+
+.features-content {
+  display: flex;
+  justify-content: space-between;
+  width: 51.5%;
+  height: 100%;
+}
+
+.feature-card {
+  background-color: rgba(255, 255, 255, 0.9);
+  color: #000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 32.7%;
+  height: 75%;
+  overflow: visible;
+  position: relative;
+  padding-top: 42px;
+}
+
+.feature-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 84px;
+  height: 84px;
+  background-color: rgb(123, 158, 54);
+  border-radius: 50%;
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+svg {
+  width: 60px;
+  height: 60px;
+  fill: #FFFFFF;
+}
+
+.materia-icon, .check-icon {
+  margin: 0.8vh 0 0 0;
+}
+
+.alvo-icon {
+  margin: 0.5vh 0 0 0;
+}
+
+.check-icon svg {
+  width: 45px;
+  height: 45px;
+}
+
+.feature-card-description {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 200;
+  width: 80%;
+  text-align: center;
+  font-size: 16px;
+  line-height: 1.8em;
+  color:rgb(37,53,44);
+}
+
+.feature-card-title {
+  font-size: 20px;
+  margin: 5vh 0 1vh 0;
+  color:rgb(37,53,44);
+}
+
+.btn {
+  color: #FFFFFF;
+  background-color: #5E801A;
+  font-family: "Avenir LT Pro 35 Light", sans-serif;
+  font-size: 14px;
+  font-weight: 100;
+  letter-spacing: 0;
+  padding: 10px 20px;
+  margin: 3vh 0 0 0;
+  transition: all 0.2s ease, visibility 0s;
+}
+
+.btn:hover {
+  background-color: #FFFFFF;
+  color: #5E801A;
+  border: 1px solid #5E801A;
+}
