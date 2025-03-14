@@ -19,7 +19,7 @@ export const Inicio = () => {
     <section tabIndex={-1} className="inicio-container" id="inicio">
       <video
         className="background-video"
-        src="src/assets/file.mp4"
+        src="/file.mp4"
         autoPlay
         loop
         muted

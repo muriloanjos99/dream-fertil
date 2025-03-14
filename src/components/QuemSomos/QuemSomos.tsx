@@ -17,7 +17,7 @@ export const QuemSomos = () => {
       </div>
 
       <div className="about-image">
-        <img src="src/assets/dreamfertil_fabrica.avif" alt="Fábrica da Dream Fértil" loading="lazy" />
+        <img src="/dreamfertil_fabrica.avif" alt="Fábrica da Dream Fértil" loading="lazy" />
       </div>
     </section>
   );

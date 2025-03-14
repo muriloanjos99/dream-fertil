@@ -34,17 +34,17 @@ export const FaleConosco = () => {
           <div className="social-icons">
             <a href="https://www.facebook.com/dreamfertil" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
               <i className="fab fa-facebook">
-                <img src="src/assets/facebook_logo.avif" alt="" />
+                <img src="/facebook_logo.avif" alt="" />
               </i>
             </a>
             <a href="https://www.instagram.com/dreamfertil" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
               <i className="fab fa-instagram">
-                <img src="src/assets/insta_logo.avif" alt="" />
+                <img src="/insta_logo.avif" alt="" />
               </i>
             </a>
             <a href="https://www.linkedin.com/company/dream-fertil" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
               <i className="fab fa-linkedin">
-                <img src="src/assets/linkedin_logo.avif" alt="" />
+                <img src="/linkedin_logo.avif" alt="" />
               </i>
             </a>
           </div>

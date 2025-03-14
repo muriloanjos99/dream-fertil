@@ -9,7 +9,7 @@ main::before {
   left: 0;
   width: 100%;
   height: calc(100vh - 62px);
-  background-image: url(src/assets/bg_image.avif);
+  background-image: url(/bg_image.avif);
   background-size: cover;
   background-position: 0 3vh;
   background-repeat: no-repeat;

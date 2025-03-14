@@ -17,7 +17,7 @@ export const Header = () => {
     <header className="header-container">
       <div className="header-logo">
         <a href="/" target="_self" className="header-logo-link">
-          <img className="header-logo-img" src="src/assets/dreamfertil_logo.avif" alt="" />
+          <img className="header-logo-img" src="/dreamfertil_logo.avif" alt="" />
         </a>
       </div>
 

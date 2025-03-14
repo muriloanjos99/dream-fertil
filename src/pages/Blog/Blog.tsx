@@ -74,7 +74,7 @@ export const Blog = () => {
           {!posts || posts.length === 0 ? (
             <div className='no-posts-container'>
               <p className='no-posts-message'>Ainda não há postagens, aguarde!</p>
-              <img src='src/assets/farmer-farm-svgrepo-com.svg' alt="Nenhum post encontrado" className='no-posts-img' />
+              <img src='/farmer-farm-svgrepo-com.svg' alt="Nenhum post encontrado" className='no-posts-img' />
             </ div>
           ) : (
             posts.map((post) => (
