@@ -2,6 +2,7 @@ import { Button } from "@mui/material";
 import "./Inicio.css";
 import { useLocation } from "react-router-dom";
 import { useEffect } from "react";
+import { getWhatsAppLink } from "../../utils/getWhatsappLink";
 
 export const Inicio = () => {
   const location = useLocation();
@@ -33,7 +34,15 @@ export const Inicio = () => {
           A Dream Fértil produz fertilizantes 100% orgânicos certificados internacionalmente. Com pesquisa e um moderno processo produtivo, oferecemos uma alternativa sustentável de Alta Produtividade e o melhor Custo Benefício.
         </p>
         <div className="inicio-button-container">
-          <Button className="inicio-button" variant="contained" color="primary" size="large">
+          <Button
+            className="inicio-button"
+            variant="contained"
+            color="primary"
+            size="large"
+            href={getWhatsAppLink()}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Entre em contato
           </Button>
         </div>

@@ -1,11 +1,7 @@
+import { getWhatsAppLink } from '../../utils/getWhatsappLink';
 import './Produtos.css';
 
 export const Produtos = () => {
-  const getWhatsAppLink = (productName: string) => {
-    const phoneNumber = '554499612027';
-    const message = `Olá, tenho interesse no produto "Fertilizante ${productName}". Poderia me ajudar?`;
-    return `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
-  };
 
   return (
     <section className="products-section" id="produtos">

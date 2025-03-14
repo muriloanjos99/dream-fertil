@@ -1,3 +1,4 @@
+import { getWhatsAppLink } from '../../utils/getWhatsappLink';
 import './Features.css';
 
 export const Features = () => {
@@ -22,7 +23,7 @@ export const Features = () => {
           </div>
           <h3 className='feature-card-title'>Matéria-prima</h3>
           <p className='feature-card-description'>Nossos fertilizantes orgânicos são produzidos a partir da cama de frango. Essa biomassa é rica em micro e macro nutrientes, como o nitrogênio, o fósforo e o potássio, que geram produtividade e longevidade à lavoura.</p>
-          <a href="https://wa.me/554499612027" className="btn btn-primary" target="_blank" rel="noopener noreferrer">
+          <a href={getWhatsAppLink()} className="btn btn-primary" target="_blank" rel="noopener noreferrer">
             Mais informações
           </a>
         </div>
@@ -39,7 +40,7 @@ export const Features = () => {
           </div>
           <h3 className='feature-card-title'>Aplicação</h3>
           <p className='feature-card-description'> Com um moderno processo industrial, unimos todos os nutrientes num único pellet. Desta forma, a nutrição do solo é feita de forma balanceada, promovendo o crescimento saudável e uniforme das plantas.</p>
-          <a href="https://wa.me/554499612027" className="btn btn-primary" target="_blank" rel="noopener noreferrer">
+          <a href={getWhatsAppLink()} className="btn btn-primary" target="_blank" rel="noopener noreferrer">
             Mais informações
           </a>
         </div>
@@ -56,7 +57,7 @@ export const Features = () => {
           </div>
           <h3 className='feature-card-title'> Certificação Internacional</h3>
           <p className='feature-card-description'> Recebemos a certificação internacional da Ceres GmbH, exigida nos maiores mercados do mundo. Isso abre portas para que nossos parceiros e clientes exportem seus produtos para o mercado europeu e americano.</p>
-          <a href="https://wa.me/554499612027" className="btn btn-primary" target="_blank" rel="noopener noreferrer">
+          <a href={getWhatsAppLink()} className="btn btn-primary" target="_blank" rel="noopener noreferrer">
             Mais informações
           </a>
         </div>
