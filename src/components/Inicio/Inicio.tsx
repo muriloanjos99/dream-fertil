@@ -28,7 +28,9 @@ export const Inicio = () => {
       />
       <div className="inicio-content">
         <h2 className="inicio-title">
-          Fertilização orgânica&nbsp; de alta qualidade
+          Fertilização <span>orgânica</span>&nbsp; de <span>
+            alta qualidade
+          </span>
         </h2>
         <p className="inicio-description">
           A Dream Fértil produz fertilizantes 100% orgânicos certificados internacionalmente. Com pesquisa e um moderno processo produtivo, oferecemos uma alternativa sustentável de Alta Produtividade e o melhor Custo Benefício.

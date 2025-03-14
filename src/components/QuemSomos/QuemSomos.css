@@ -1,8 +1,8 @@
 .about-container {
   display: flex;
   width: 100%;
-  height: calc(100vh);
-  padding-top: 90px;
+  height: calc(100vh - 90px);
+  padding-top: 40px;
   justify-content: center;
   align-items: center;
   overflow: hidden;
