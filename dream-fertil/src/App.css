@@ -1,8 +1,4 @@
 main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   min-height: calc(100vh - 90px);
 }
 
@@ -54,4 +50,29 @@ main::before {
 
 .read-the-docs {
   color: #888;
+}
+
+@media (max-width: 768px) {
+  main {
+      min-height: calc(100vh - 70px);
+    padding: 0;
+  }
+
+  main::before {
+    top: 0; /* Remove o espaçamento superior */
+    min-height: calc(100vh - 70px);
+    margin-top: 70px;
+    background-position: center;
+  }
+
+  /* Ajustes para o logo (se necessário) */
+  .logo {
+    height: 4em; /* Reduz o tamanho do logo */
+    padding: 1em; /* Reduz o padding */
+  }
+
+  /* Ajustes para cards (se houver) */
+  .card {
+    padding: 1em; /* Reduz o padding dos cards */
+  }
 }

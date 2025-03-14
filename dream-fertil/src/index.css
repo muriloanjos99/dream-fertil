@@ -37,15 +37,9 @@ a:hover {
 
 body {
   margin: 0;
-  display: flex;
-  place-items: center;
-  align-items: center;
-  justify-content: center;
   max-width: 100vw;
   min-height: 100vh;
-  overflow-y: scroll;
-  scroll-snap-type: y mandatory;
-  scroll-behavior: smooth;
+  /* overflow-y: scroll; */
 }
 
 h1 {
@@ -84,3 +78,31 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+@media (max-width: 768px) {
+  :root {
+    font-size: 14px;
+  }
+
+  body {
+    flex-direction: column;
+    width: 100%;
+    min-height: calc(100vh - 70px); /* Remove a altura mínima fixa */
+  }
+
+  h1 {
+    font-size: 2em; /* Reduz o tamanho da fonte do h1 */
+    line-height: 1.2; /* Ajusta o line-height */
+  }
+
+  button {
+    padding: 0.5em 1em; /* Reduz o padding dos botões */
+    font-size: 0.9em; /* Reduz o tamanho da fonte dos botões */
+  }
+
+  /* Ajustes para links */
+  a {
+    font-size: 0.9em; /* Reduz o tamanho da fonte dos links */
+  }
+}
+

@@ -67,11 +67,66 @@
 }
 
 @media (max-width: 768px) {
+  .admin-login {
+    min-height: 100vh;
+    padding: 20px;
+    background: #2E5E4E; /* Simplifica o gradiente para melhor performance */
+  }
+
   .admin-login h1 {
-    font-size: 2rem;
+    font-size: 1.8rem !important;
+    margin: 2rem 0 1.5rem;
+    line-height: 1.3;
   }
 
   .admin-login form {
+    width: 100%;
+    max-width: none;
     padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  }
+
+  .admin-login input {
+    padding: 14px !important;
+    font-size: 16px !important;
+    margin-bottom: 1.2rem;
+  }
+
+  .admin-login button {
+    padding: 16px !important;
+    font-size: 1.1rem !important;
+  }
+
+  .error {
+    font-size: 14px !important;
+    margin: -0.5rem 0 1rem;
+  }
+}
+
+/* Ajustes para telas muito pequenas */
+@media (max-width: 480px) {
+  .admin-login {
+    padding: 15px;
+    justify-content: flex-start;
+    padding-top: 30vh;
+  }
+
+  .admin-login h1 {
+    font-size: 1.6rem !important;
+    margin-bottom: 1.2rem;
+  }
+
+  .admin-login form {
+    padding: 1.2rem;
+  }
+
+  .admin-login input {
+    font-size: 15px !important;
+    padding: 12px !important;
+  }
+
+  .admin-login button {
+    font-size: 1rem !important;
   }
 }

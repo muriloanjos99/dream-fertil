@@ -6,7 +6,7 @@
   width: 100%;
   height: calc(100vh - 90px);
   background-color: rgba(255, 255, 255, 0.277);
-  scroll-snap-align: end;
+  scroll-snap-align: start;
 }
 
 .features-title {
@@ -106,4 +106,67 @@ svg {
   background-color: #FFFFFF;
   color: #5E801A;
   border: 1px solid #5E801A;
+}
+
+@media (max-width: 768px) {
+  .features-container {
+    height: auto;
+    padding-top: 70px;
+  }
+
+  .features-title {
+    font-size: 32px !important;
+    text-align: center;
+    margin: 0 auto 20px !important;
+    width: 90% !important;
+  }
+
+  .features-content {
+    flex-direction: column;
+    width: 90% !important;
+    gap: 60px;
+    height: auto;
+  }
+
+  .feature-card {
+    width: 100% !important;
+    height: auto;
+    padding: 30px 20px 20px;
+    margin-bottom: 40px;
+    scroll-snap-align: center;
+  }
+
+  .feature-icon {
+    width: 70px;
+    height: 70px;
+    top: -35px;
+  }
+
+  svg {
+    width: 40px !important;
+    height: 40px !important;
+  }
+
+  .check-icon svg {
+    width: 30px !important;
+    height: 30px !important;
+  }
+
+  .feature-card-title {
+    font-size: 22px;
+    margin: 20px 0 15px;
+    text-align: center;
+  }
+
+  .feature-card-description {
+    font-size: 15px !important;
+    width: 90% !important;
+    line-height: 1.6em;
+  }
+
+  .btn {
+    font-size: 16px !important;
+    padding: 12px 25px !important;
+    margin-top: 20px !important;
+  }
 }

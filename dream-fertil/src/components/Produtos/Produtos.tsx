@@ -1,6 +1,12 @@
 import './Produtos.css';
 
 export const Produtos = () => {
+  const getWhatsAppLink = (productName: string) => {
+    const phoneNumber = '554499612027'; // Número de telefone
+    const message = `Olá, tenho interesse no produto "Fertilizante ${productName}". Poderia me ajudar?`; // Mensagem personalizada
+    return `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+  };
+
   return (
     <section className="products-section" id="produtos">
       <h2 className="section-title">Nossos produtos</h2>
@@ -12,7 +18,7 @@ export const Produtos = () => {
             <p className="product-description">Fertilizante orgânico sem cheiro. Ideal para casas, jardins e ambientes fechados.</p>
             <div className="product-name-btn">
               <h3 className="product-name">Garden</h3>
-              <a href="https://wa.me/554499612027" className="cta-button" target="_blank" rel="noopener noreferrer">
+              <a href={getWhatsAppLink("Garden")} className="cta-button" target="_blank" rel="noopener noreferrer">
                 Comprar
               </a>
             </div>
@@ -25,7 +31,7 @@ export const Produtos = () => {
             <p className="product-description">Fertilizante orgânico 100% natural, com certificação internacional. Rico em micro e macro nutrientes para enriquecer o solo da sua lavoura.</p>
             <div className="product-name-btn">
               <h3 className="product-name">Organdream 25kg</h3>
-              <a href="https://wa.me/554499612027" className="cta-button" target="_blank" rel="noopener noreferrer">
+              <a href={getWhatsAppLink("Organdream 25kg")} className="cta-button" target="_blank" rel="noopener noreferrer">
                 Comprar
               </a>
             </div>
@@ -38,7 +44,7 @@ export const Produtos = () => {
             <p className="product-description">Fertilizante orgânico 100% natural, com certificação internacional. Rico em nutrientes para o solo da sua lavoura.</p>
             <div className="product-name-btn">
               <h3 className="product-name">Organdream 800kg</h3>
-              <a href="https://wa.me/554499612027" className="cta-button" target="_blank" rel="noopener noreferrer">
+              <a href={getWhatsAppLink("Organdream 800kg")} className="cta-button" target="_blank" rel="noopener noreferrer">
                 Comprar
               </a>
             </div>
@@ -50,9 +56,8 @@ export const Produtos = () => {
           <div className="product-info">
             <p className="product-description">Fertilizante feito sob medida, com adição de componentes minerais e biológicos, conforme a necessidade de cada solo.</p>
             <div className="product-name-btn">
-
               <h3 className="product-name">Outras formulações</h3>
-              <a href="https://wa.me/554499612027" className="cta-button" target="_blank" rel="noopener noreferrer">
+              <a href={getWhatsAppLink("Feito Sob Medida")} className="cta-button" target="_blank" rel="noopener noreferrer">
                 Saiba mais
               </a>
             </div>

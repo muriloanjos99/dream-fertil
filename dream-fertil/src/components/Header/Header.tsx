@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import "./Header.css"
 
 const navItems = [
@@ -10,6 +11,8 @@ const navItems = [
 ];
 
 export const Header = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
   return (
     <header className="header-container">
       <div className="header-logo">
@@ -17,11 +20,25 @@ export const Header = () => {
           <img className="header-logo-img" src="src/assets/dreamfertil_logo.avif" alt="" />
         </a>
       </div>
-      <nav className="header-nav">
+
+      <button
+        className={`menu-toggle ${isMenuOpen ? 'active' : ''}`}
+        onClick={() => setIsMenuOpen(!isMenuOpen)}
+        aria-label="Toggle menu"
+      >
+        <span className="toggle-icon"></span>
+      </button>
+
+      <nav className={`header-nav ${isMenuOpen ? 'active' : ''}`}>
         <ul className="header-nav-list">
           {navItems.map((item) => (
             <li key={item.id} className="header-nav-item">
-              <a href={item.link} target="_self" className="header-nav-link">
+              <a
+                href={item.link}
+                target="_self"
+                className="header-nav-link"
+                onClick={() => setIsMenuOpen(false)}
+              >
                 <p className="header-nav-text">{item.label}</p>
               </a>
             </li>

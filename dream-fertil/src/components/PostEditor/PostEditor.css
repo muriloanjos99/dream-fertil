@@ -43,6 +43,8 @@
   border: 1px dashed #ddd;
   text-align: center;
   cursor: pointer;
+  color: #2E5E4E;
+
 }
 
 .post-editor input[type="file"]:hover {
@@ -91,18 +93,74 @@
 
 @media (max-width: 768px) {
   .post-editor {
+    width: 100%;
     padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    margin: 1rem 0;
   }
 
   .post-editor h2 {
-    font-size: 1.8rem;
+    font-size: 1.5rem !important;
+    margin-bottom: 1.2rem;
+  }
+
+  .post-editor input,
+  .post-editor textarea {
+    padding: 1rem !important;
+    font-size: 1rem !important;
+    border-radius: 8px;
+    margin-bottom: 1.2rem;
+  }
+
+  .post-editor textarea {
+    min-height: 120px;
+  }
+
+  .post-editor input[type="file"] {
+    width: 100%;
+    padding: 1rem !important;
+    margin: 0.5rem 0;
+    border: 2px dashed #ddd;
   }
 
   .editor-actions {
     flex-direction: column;
+    gap: 0.8rem;
+    margin-top: 1.5rem;
   }
 
   .editor-actions button {
     width: 100%;
+    padding: 1rem !important;
+    font-size: 1.1rem !important;
+    border-radius: 8px;
   }
+}
+
+/* Ajustes para telas muito pequenas */
+@media (max-width: 480px) {
+  .post-editor {
+    padding: 1rem;
+  }
+
+  .post-editor h2 {
+    font-size: 1.3rem !important;
+  }
+
+  .post-editor textarea {
+    min-height: 100px;
+  }
+
+  .editor-actions button {
+    font-size: 1rem !important;
+  }
+
+  .post-editor input[type="file"] {
+    width: 100%;
+    padding: 1rem !important;
+    margin: 0.5rem 0;
+    border: 2px dashed #ddd;
+  }
+
 }

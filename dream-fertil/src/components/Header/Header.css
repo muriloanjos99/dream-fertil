@@ -66,3 +66,132 @@
 .header-nav-item:hover {
   background-color: #c3d895;
 }
+
+/* Header.css - Adições para mobile */
+
+@media (max-width: 768px) {
+  .header-container {
+    justify-content: center;
+    padding: 0 20px;
+    height: 70px;
+  }
+
+  .header-logo {
+    margin: 0;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .header-logo-img {
+    width: 100px;
+  }
+
+  .menu-toggle {
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 30px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    z-index: 11;
+  }
+
+  .toggle-icon {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: #444;
+    transition: all 0.3s ease;
+  }
+
+  .toggle-icon::before,
+  .toggle-icon::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: #444;
+    transition: all 0.3s ease;
+    margin-left: -15px;
+  }
+
+  .toggle-icon::before {
+    top: -8px;
+  }
+
+  .toggle-icon::after {
+    top: 8px;
+  }
+
+  .menu-toggle.active .toggle-icon {
+    background: transparent;
+  }
+
+  .menu-toggle.active .toggle-icon::before {
+    top: 0;
+    transform: rotate(45deg);
+  }
+
+  .menu-toggle.active .toggle-icon::after {
+    top: 0;
+    transform: rotate(-45deg);
+  }
+
+  .header-nav {
+    display: none;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background: #f1f1f1;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    padding: 20px 0;
+    z-index: 10;
+  }
+
+  .header-nav.active {
+    display: block;
+  }
+
+  .header-nav-list {
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .header-nav-item {
+    width: 100%;
+    padding: 0;
+    height: auto;
+    justify-content: center;
+  }
+
+  .header-nav-link {
+    padding: 15px 0;
+  }
+
+  .header-nav-text {
+    line-height: 1.5;
+  }
+
+  .header-nav-item:hover {
+    background-color: transparent;
+  }
+
+  .header-nav-item:active {
+    background-color: #c3d895;
+  }
+}
+
+/* Esconder o toggle em desktop */
+@media (min-width: 769px) {
+  .menu-toggle {
+    display: none;
+  }
+}

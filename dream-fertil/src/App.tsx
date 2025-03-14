@@ -50,7 +50,7 @@ function App() {
           <Route path="/blog" element={<Blog />} />
           <Route path="/blog/:id" element={<BlogPost />} />
 
-          <Route path="/tela-admin-blog-df" element={<AdminLogin />} />
+          <Route path="/tela-admin-blog" element={<AdminLogin />} />
 
           <Route
             path="/admin-panel"
