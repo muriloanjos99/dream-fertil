@@ -39,7 +39,6 @@ body {
   margin: 0;
   max-width: 100vw;
   min-height: 100vh;
-  /* overflow-y: scroll; */
 }
 
 h1 {
@@ -87,22 +86,21 @@ button:focus-visible {
   body {
     flex-direction: column;
     width: 100%;
-    min-height: calc(100vh - 70px); /* Remove a altura mínima fixa */
+    min-height: calc(100vh - 70px);
   }
 
   h1 {
-    font-size: 2em; /* Reduz o tamanho da fonte do h1 */
-    line-height: 1.2; /* Ajusta o line-height */
+    font-size: 2em; 
+    line-height: 1.2;
   }
 
   button {
-    padding: 0.5em 1em; /* Reduz o padding dos botões */
-    font-size: 0.9em; /* Reduz o tamanho da fonte dos botões */
+    padding: 0.5em 1em;
+    font-size: 0.9em;
   }
 
-  /* Ajustes para links */
   a {
-    font-size: 0.9em; /* Reduz o tamanho da fonte dos links */
+    font-size: 0.9em;
   }
 }
 

@@ -138,7 +138,6 @@
   }
 }
 
-/* Ajustes para telas muito pequenas */
 @media (max-width: 480px) {
   .post-editor {
     padding: 1rem;

@@ -67,8 +67,6 @@
   background-color: #c3d895;
 }
 
-/* Header.css - Adições para mobile */
-
 @media (max-width: 768px) {
   .header-container {
     justify-content: center;
@@ -189,7 +187,6 @@
   }
 }
 
-/* Esconder o toggle em desktop */
 @media (min-width: 769px) {
   .menu-toggle {
     display: none;

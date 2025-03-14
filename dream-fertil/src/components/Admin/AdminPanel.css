@@ -171,7 +171,6 @@
   }
 }
 
-/* Ajustes para telas muito pequenas */
 @media (max-width: 480px) {
   .admin-panel {
     padding: 1rem;

@@ -2,8 +2,8 @@ import './Produtos.css';
 
 export const Produtos = () => {
   const getWhatsAppLink = (productName: string) => {
-    const phoneNumber = '554499612027'; // Número de telefone
-    const message = `Olá, tenho interesse no produto "Fertilizante ${productName}". Poderia me ajudar?`; // Mensagem personalizada
+    const phoneNumber = '554499612027';
+    const message = `Olá, tenho interesse no produto "Fertilizante ${productName}". Poderia me ajudar?`;
     return `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
   };
 

@@ -264,7 +264,6 @@
   }
 }
 
-/* Ajustes adicionais para telas muito pequenas */
 @media (max-width: 480px) {
   .post-image-container {
     height: 160px;

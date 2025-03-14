@@ -70,7 +70,7 @@
   .admin-login {
     min-height: 100vh;
     padding: 20px;
-    background: #2E5E4E; /* Simplifica o gradiente para melhor performance */
+    background: #2E5E4E;
   }
 
   .admin-login h1 {
@@ -104,7 +104,6 @@
   }
 }
 
-/* Ajustes para telas muito pequenas */
 @media (max-width: 480px) {
   .admin-login {
     padding: 15px;

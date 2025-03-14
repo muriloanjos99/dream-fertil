@@ -59,20 +59,18 @@ main::before {
   }
 
   main::before {
-    top: 0; /* Remove o espaçamento superior */
+    top: 0;
     min-height: calc(100vh - 70px);
     margin-top: 70px;
     background-position: center;
   }
 
-  /* Ajustes para o logo (se necessário) */
   .logo {
-    height: 4em; /* Reduz o tamanho do logo */
-    padding: 1em; /* Reduz o padding */
+    height: 4em; 
+    padding: 1em; 
   }
 
-  /* Ajustes para cards (se houver) */
   .card {
-    padding: 1em; /* Reduz o padding dos cards */
+    padding: 1em; 
   }
 }
