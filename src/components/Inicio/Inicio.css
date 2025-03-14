@@ -81,16 +81,17 @@
 
 @media (max-width: 768px) {
   .inicio-container {
-    height: calc(100vh - 70px);
+    min-height: calc(100vh - 70px);
+    height: auto;
     width: 100vw;
     justify-content: center;
     align-items: center;
   }
   
   .background-video {
-    top: 0;
+    top: 70px;
     height: calc(100vh - 70px);
-    margin-top: 70px !important;
+    margin-top: 0;
   }
 
   .inicio-content {

@@ -182,10 +182,14 @@
 
 @media (max-width: 768px) {
   .blog-container {
-    margin-top: 70px;
-    /* scroll-snap-align: center; */
+    padding: 0;
+    scroll-snap-align: start;
     min-height: calc(100vh - 70px - 5vh);
-    padding: 0.1px 20px 40px 20px;
+    padding-top: 0.1px;
+  }
+
+  .background-overlay {
+    max-height: calc(100vh - 90px - 5vh);
   }
 
   .blog-header {

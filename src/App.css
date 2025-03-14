@@ -54,8 +54,8 @@ main::before {
 
 @media (max-width: 768px) {
   main {
-    min-height: calc(100vh - 70px);
-    margin-top: 70px;
+    min-height: calc(100vh - 70px - 5vh);
+    margin-top: 0;
     padding: 0;
   }
 

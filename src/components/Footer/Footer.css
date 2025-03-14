@@ -20,6 +20,6 @@ footer {
 @media (max-width: 768px) {
   footer {
     width: 100vw;
-    scroll-snap-align: end;
+    scroll-snap-align: start;
   }
 }

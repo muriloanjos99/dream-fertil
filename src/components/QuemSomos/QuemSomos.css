@@ -53,10 +53,9 @@
 @media (max-width: 768px) {
   .about-container {
     flex-direction: column;
-    height: auto;
     min-height: calc(100vh - 70px);
-    padding-top: 90px;
-    scroll-snap-align: start;
+    height: auto;
+    padding-top: 25px;
   }
 
   .about-content {
@@ -65,7 +64,6 @@
     order: 2;
     align-items: center;
     text-align: center;
-    scroll-snap-align: center;
 
   }
 
