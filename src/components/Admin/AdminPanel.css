@@ -1,10 +1,11 @@
 .admin-panel {
   max-width: 1200px;
-  min-height: calc(100vh - 5vh);
+  min-height: calc(100vh - 70px - 5vh);
   margin: 0 auto 0 auto;
   padding: 2vh 2rem;
   background: rgba(255, 255, 255, 0.95);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  scroll-snap-align: start;
 }
 
 .admin-panel h1 {
@@ -111,24 +112,31 @@
 
 @media (max-width: 768px) {
   .admin-panel {
-    width: 100%;
-    min-height: calc(100vh - 70px);
-    margin: 70px 0 0 0;
-    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    padding: 0;
+    max-height: calc(100vh - 70px - 10vh);
+    height: 10vh;
+    overflow-y: scroll;
     box-shadow: none;
     border-radius: 0;
   }
-
+  
   .admin-panel h1 {
+    padding-top: 50px;
     font-size: 1.8rem !important;
     margin-bottom: 1.5rem;
+
   }
 
   .new-post-button {
-    width: 100%;
+    width: 90vw;
     padding: 15px !important;
     font-size: 1.1rem !important;
     margin-bottom: 1.5rem;
+    /* scroll-snap-align: none; */
   }
 
   .posts-list {
@@ -173,7 +181,7 @@
 
 @media (max-width: 480px) {
   .admin-panel {
-    padding: 1rem;
+    padding: 0;
   }
 
   .admin-panel h1 {

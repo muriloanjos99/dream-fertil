@@ -80,10 +80,12 @@
 
 @media (max-width: 768px) {
   .admin-post-item {
+    width: 90vw;
     flex-direction: column;
     text-align: center;
     gap: 1rem;
     padding: 1rem;
+    scroll-snap-align: none;
   }
 
   .admin-post-item img {
