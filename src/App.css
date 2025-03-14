@@ -1,5 +1,5 @@
 main {
-  min-height: calc(100vh - 90px);
+  min-height: calc(100vh - 90px - 5vh);
   margin-top: 90px;
 }
 
@@ -9,7 +9,7 @@ main::before {
   top: 90px;
   left: 0;
   width: 100%;
-  height: calc(100vh - 90px);
+  min-height: calc(100vh - 90px);
   background-image: url(/bg_image.avif);
   background-size: cover;
   background-repeat: no-repeat;

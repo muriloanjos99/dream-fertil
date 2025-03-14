@@ -23,11 +23,12 @@
 }
 
 .blog-container {
-  min-height: calc(100vh - 90px - 5vh);
+  height: calc(100vh - 90px - 5vh);
   background: rgba(255, 255, 255, 0.93);
   backdrop-filter: blur(20px);
   padding-top: 0.1px;
-  padding-bottom: 5vh;
+  overflow-y: auto;
+
 }
 
 .blog-header {
@@ -68,6 +69,7 @@
   gap: 2.5rem;
   max-width: 1200px;
   margin: 0 auto;
+  padding-bottom: 5vh;
 }
 
 .post-card {
