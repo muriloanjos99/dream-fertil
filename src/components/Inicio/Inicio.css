@@ -3,17 +3,18 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  width: 100vw;
   height: calc(100vh - 90px);
   box-sizing: border-box;
   scroll-snap-align: end;
+  
 }
 
 .background-video {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 100vw;
   height: calc(100vh - 90px);
   margin-top: 90px;
   object-fit: cover;
