@@ -23,11 +23,11 @@
   padding: 4rem 2rem;
   min-height: calc(100vh - 120px);
   background: var(--light);
-  margin-top: 5vh;
   background: var(--light);
   backdrop-filter: blur(50px);
   border: 1px solid rgba(255, 255, 255, 0.2);
   width: 800px;
+  justify-self: center
 }
 
 .news-detail-container::before {

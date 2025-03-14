@@ -1,17 +1,17 @@
 main {
   min-height: calc(100vh - 90px);
+  margin-top: 90px;
 }
 
 main::before {
   content: '';
   position: fixed;
-  top: 6.3vh;
+  top: 90px;
   left: 0;
   width: 100%;
-  height: calc(100vh - 62px);
+  height: calc(100vh - 90px);
   background-image: url(/bg_image.avif);
   background-size: cover;
-  background-position: 0 3vh;
   background-repeat: no-repeat;
   z-index: -1;
 }

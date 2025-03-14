@@ -5,6 +5,7 @@
   align-items: center;
   width: 100%;
   height: calc(100vh - 90px);
+  padding-top: 90px;
   background-color: rgba(255, 255, 255, 0.277);
   scroll-snap-align: start;
 }
