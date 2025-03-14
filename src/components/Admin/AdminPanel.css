@@ -1,8 +1,8 @@
 .admin-panel {
   max-width: 1200px;
-  min-height: calc(100vh - 90px - 5vh);
-  margin: 90px auto 0 auto;
-  padding: 2rem;
+  min-height: calc(100vh - 5vh);
+  margin: 0 auto 0 auto;
+  padding: 2vh 2rem;
   background: rgba(255, 255, 255, 0.95);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
