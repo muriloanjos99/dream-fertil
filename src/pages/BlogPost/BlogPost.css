@@ -27,7 +27,7 @@
   backdrop-filter: blur(50px);
   border: 1px solid rgba(255, 255, 255, 0.2);
   width: 800px;
-  justify-self: center
+  justify-self: center;
 }
 
 .news-detail-container::before {
@@ -159,12 +159,13 @@
     border: none;
     backdrop-filter: none;
   }
-
+  
   .news-detail-container::before {
     display: none;
   }
-
+  
   .back-to-blog-button {
+    scroll-snap-align: center;
     margin-bottom: 1rem !important;
     padding: 10px 20px !important;
     font-size: 14px !important;
